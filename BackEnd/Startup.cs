@@ -39,6 +39,8 @@ namespace BackEnd
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors("AllowWebApp");
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
